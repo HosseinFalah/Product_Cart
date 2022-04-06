@@ -1,0 +1,9 @@
+.h-height-NavBar{
+    min-height: 15vh;
+}
+
+.badge-cart{
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+}
