@@ -1,6 +1,9 @@
+import { useProducts } from '../Providers/ProductsProviders';
 import './NavBar.css'
 
-const NavBar = ({totalItem}) => {
+const NavBar = () => {
+    const products  = useProducts();
+    const totalItem = products
     return (
         <header className="flex items-center justify-center w-full bg-gray-300 h-height-NavBar">
             <p className="text-neutral-800 text-3xl">Shopping Cart</p>
@@ -8,5 +11,4 @@ const NavBar = ({totalItem}) => {
         </header>
     );
 }
- 
 export default NavBar;
